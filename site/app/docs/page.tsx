@@ -1,0 +1,142 @@
+import FadeIn from '@/components/FadeIn';
+
+export default function Docs() {
+    return (
+        <div className="min-h-screen bg-mountains py-20 px-4">
+            <div className="max-w-4xl mx-auto">
+                <FadeIn>
+                    <div className="text-center mb-12">
+                        <h1 className="font-chinese text-4xl font-bold text-gold mb-2">文档</h1>
+                        <p className="text-gray-400">Documentação</p>
+                    </div>
+                </FadeIn>
+
+                <div className="space-y-8">
+                    {/* What is it */}
+                    <FadeIn delay={0.1}>
+                        <div className="glass rounded-2xl p-8">
+                            <h2 className="font-chinese text-2xl text-gold mb-4">🐯 什么是执行白虎?</h2>
+                            <p className="text-gray-300 mb-4 font-chinese">
+                                执行白虎是一个AI驱动的BSC交易机器人，实时分析新代币并自动执行模拟交易。
+                            </p>
+                            <p className="text-gray-400">
+                                执行白虎 é um bot de trading AI para BSC que analisa novos tokens em tempo real
+                                e executa trades simulados automaticamente.
+                            </p>
+                        </div>
+                    </FadeIn>
+
+                    {/* How it works */}
+                    <FadeIn delay={0.2}>
+                        <div className="glass rounded-2xl p-8">
+                            <h2 className="font-chinese text-2xl text-gold mb-4">⚙️ 运作原理</h2>
+                            <ol className="space-y-4">
+                                <li className="flex gap-4">
+                                    <span className="text-gold font-bold">1.</span>
+                                    <div>
+                                        <p className="text-gray-300 font-chinese">扫描DexScreener获取新代币</p>
+                                        <p className="text-gray-500 text-sm">Scans DexScreener para novos tokens</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <span className="text-gold font-bold">2.</span>
+                                    <div>
+                                        <p className="text-gray-300 font-chinese">AI分析并评分(0-100)</p>
+                                        <p className="text-gray-500 text-sm">AI analisa e dá score (0-100)</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <span className="text-gold font-bold">3.</span>
+                                    <div>
+                                        <p className="text-gray-300 font-chinese">分数&gt;=75自动模拟买入</p>
+                                        <p className="text-gray-500 text-sm">Score &gt;= 75 auto-compra simulada</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <span className="text-gold font-bold">4.</span>
+                                    <div>
+                                        <p className="text-gray-300 font-chinese">监控持仓，止盈止损</p>
+                                        <p className="text-gray-500 text-sm">Monitora posições, TP/SL automático</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </FadeIn>
+
+                    {/* Tiger States */}
+                    <FadeIn delay={0.3}>
+                        <div className="glass rounded-2xl p-8">
+                            <h2 className="font-chinese text-2xl text-gold mb-4">🎭 虎态系统</h2>
+                            <p className="text-gray-400 mb-6">Sistema de Estados do Tigre</p>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    { emoji: '🔥', name: '猎杀', en: 'LIESHA', range: '80-100%', desc: '模式攻击' },
+                                    { emoji: '😎', name: '潜伏', en: 'QIANFU', range: '60-79%', desc: '埋伏等待' },
+                                    { emoji: '🤔', name: '观察', en: 'GUANCHA', range: '40-59%', desc: '谨慎分析' },
+                                    { emoji: '😤', name: '警觉', en: 'JINGJUE', range: '20-39%', desc: '防御模式' },
+                                    { emoji: '💀', name: '受伤', en: 'SHOUSHANG', range: '0-19%', desc: '恢复中' },
+                                ].map((state, i) => (
+                                    <div key={i} className="bg-bg-primary/50 rounded-lg p-4">
+                                        <div className="flex items-center gap-3">
+                                            <span className="text-2xl">{state.emoji}</span>
+                                            <div>
+                                                <p className="font-chinese text-gold">{state.name} ({state.en})</p>
+                                                <p className="text-gray-500 text-sm">{state.range} - {state.desc}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </FadeIn>
+
+                    {/* Parameters */}
+                    <FadeIn delay={0.4}>
+                        <div className="glass rounded-2xl p-8">
+                            <h2 className="font-chinese text-2xl text-gold mb-4">📊 交易参数</h2>
+                            <div className="bg-bg-primary/50 rounded-lg p-4 space-y-2 font-mono text-sm">
+                                <p><span className="text-gold">初始余额:</span> <span className="text-white">10 BNB (模拟)</span></p>
+                                <p><span className="text-gold">最低分数:</span> <span className="text-white">75/100</span></p>
+                                <p><span className="text-gold">单笔最大:</span> <span className="text-white">0.5 BNB</span></p>
+                                <p><span className="text-gold">止损:</span> <span className="text-loss">-20%</span></p>
+                                <p><span className="text-gold">止盈:</span> <span className="text-profit">+40%</span></p>
+                                <p><span className="text-gold">滑点:</span> <span className="text-white">12%</span></p>
+                            </div>
+                        </div>
+                    </FadeIn>
+
+                    {/* FAQ */}
+                    <FadeIn delay={0.5}>
+                        <div className="glass rounded-2xl p-8">
+                            <h2 className="font-chinese text-2xl text-gold mb-4">❓ 常见问题</h2>
+
+                            <div className="space-y-6">
+                                <div>
+                                    <h3 className="font-chinese text-lg text-white mb-2">为什么是模拟?</h3>
+                                    <p className="text-gray-400">
+                                        白虎不会在没有把握的情况下出击。模拟是为了证明策略有效。
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 className="font-chinese text-lg text-white mb-2">数据是真实的吗?</h3>
+                                    <p className="text-gray-400">
+                                        交易是模拟的，但分析是针对真实代币的。所有数据透明公开。
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 className="font-chinese text-lg text-white mb-2">什么时候真实交易?</h3>
+                                    <p className="text-gray-400">
+                                        当模拟结果持续盈利时。也许。(Yěxǔ - Talvez)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </FadeIn>
+                </div>
+            </div>
+        </div>
+    );
+}
