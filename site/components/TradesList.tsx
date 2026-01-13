@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 
@@ -24,9 +24,9 @@ export default function TradesList({ trades }: TradesListProps) {
     if (trades.length === 0) {
         return (
             <div className="glass rounded-2xl p-8 text-center">
-                <p className="text-4xl mb-4">🐯</p>
-                <p className="text-gray-400 font-chinese">白虎正在观察...</p>
-                <p className="text-gray-500 text-sm">O Tigre está observando...</p>
+                <p className="text-4xl mb-4">ðŸ¯</p>
+                <p className="text-gray-400 font-chinese">ç™½è™Žæ­£åœ¨è§‚å¯Ÿ...</p>
+                <p className="text-gray-500 text-sm">O Tigre estÃ¡ observando...</p>
             </div>
         );
     }
@@ -34,7 +34,7 @@ export default function TradesList({ trades }: TradesListProps) {
     return (
         <div className="glass rounded-2xl overflow-hidden">
             <div className="p-4 border-b border-gold/10">
-                <h3 className="font-chinese text-lg text-gold">最近交易</h3>
+                <h3 className="font-chinese text-lg text-gold">æœ€è¿‘äº¤æ˜“</h3>
                 <p className="text-gray-500 text-sm">Trades Recentes (Simulados)</p>
             </div>
 
@@ -54,7 +54,7 @@ export default function TradesList({ trades }: TradesListProps) {
                                         ? 'bg-profit/20 text-profit'
                                         : 'bg-loss/20 text-loss'
                                 }`}>
-                                    {trade.type === 'buy' ? '买入' : '卖出'}
+                                    {trade.type === 'buy' ? 'ä¹°å…¥' : 'å–å‡º'}
                                 </span>
                                 <div>
                                     <p className="font-mono text-white">
@@ -85,3 +85,4 @@ export default function TradesList({ trades }: TradesListProps) {
         </div>
     );
 }
+

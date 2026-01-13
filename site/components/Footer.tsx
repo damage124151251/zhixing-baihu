@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -11,49 +11,49 @@ export default function Footer() {
                         <div className="flex items-center gap-3 mb-4">
                             <Image
                                 src="/logo.png"
-                                alt="执行白虎"
+                                alt="æ‰§è¡Œç™½è™Ž"
                                 width={48}
                                 height={48}
                                 className="rounded-full"
                             />
                             <div>
-                                <h3 className="font-chinese text-xl font-bold text-gold">执行白虎</h3>
-                                <p className="text-sm text-gray-500">ZHÍXÍNG BÁIHǓ</p>
+                                <h3 className="font-chinese text-xl font-bold text-gold">æ‰§è¡Œç™½è™Ž</h3>
+                                <p className="text-sm text-gray-500">ZHÃXÃNG BÃIHÇ“</p>
                             </div>
                         </div>
                         <p className="text-gray-400 text-sm font-chinese">
-                            观察。等待。执行。
+                            è§‚å¯Ÿã€‚ç­‰å¾…ã€‚æ‰§è¡Œã€‚
                         </p>
                         <p className="text-gray-500 text-xs mt-1">
-                            Observar. Esperar. Executar.
+                            Observe. Wait. Execute.
                         </p>
                     </div>
 
                     {/* Links */}
                     <div>
-                        <h4 className="text-sm font-semibold text-gold mb-4 font-chinese">链接</h4>
+                        <h4 className="text-sm font-semibold text-gold mb-4 font-chinese">é“¾æŽ¥</h4>
                         <div className="flex flex-col gap-2">
                             <Link href="/" className="text-gray-400 hover:text-gold text-sm transition-colors">
-                                首页 (Home)
+                                é¦–é¡µ (Home)
                             </Link>
                             <Link href="/docs" className="text-gray-400 hover:text-gold text-sm transition-colors">
-                                文档 (Docs)
+                                æ–‡æ¡£ (Docs)
                             </Link>
                             <Link href="/privacy" className="text-gray-400 hover:text-gold text-sm transition-colors">
-                                隐私政策 (Privacy)
+                                éšç§æ”¿ç­– (Privacy)
                             </Link>
                             <Link href="/terms" className="text-gray-400 hover:text-gold text-sm transition-colors">
-                                服务条款 (Terms)
+                                æœåŠ¡æ¡æ¬¾ (Terms)
                             </Link>
                         </div>
                     </div>
 
                     {/* Socials */}
                     <div>
-                        <h4 className="text-sm font-semibold text-gold mb-4 font-chinese">社交</h4>
+                        <h4 className="text-sm font-semibold text-gold mb-4 font-chinese">ç¤¾äº¤</h4>
                         <div className="flex flex-col gap-2">
                             <a
-                                href="https://twitter.com"
+                                href="https://x.com/ZhixingBaihu"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-gold text-sm flex items-center gap-2 transition-colors"
@@ -69,7 +69,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-gold text-sm flex items-center gap-2 transition-colors"
                             >
-                                <span>🔍</span>
+                                <span>ðŸ”</span>
                                 BSCScan
                             </a>
                         </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                 {/* Bottom */}
                 <div className="mt-10 pt-6 border-t border-gold/10 text-center">
                     <p className="text-gray-500 text-xs font-chinese">
-                        © {new Date().getFullYear()} 执行白虎. 模拟交易 - 非投资建议
+                        Â© {new Date().getFullYear()} æ‰§è¡Œç™½è™Ž. æ¨¡æ‹Ÿäº¤æ˜“ - éžæŠ•èµ„å»ºè®®
                     </p>
                     <p className="text-gray-600 text-xs mt-1">
                         Simulation Trading - Not Financial Advice
@@ -89,3 +89,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+

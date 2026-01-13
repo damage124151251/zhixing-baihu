@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -67,7 +67,7 @@ export default function Home() {
                     >
                         <Image
                             src="/logo.png"
-                            alt="执行白虎"
+                            alt="æ‰§è¡Œç™½è™Ž"
                             width={180}
                             height={180}
                             className="mx-auto rounded-full animate-breathe glow-gold"
@@ -80,7 +80,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="font-chinese text-5xl md:text-7xl font-bold text-gold-gradient mb-4"
                     >
-                        执行白虎
+                        æ‰§è¡Œç™½è™Ž
                     </motion.h1>
 
                     <motion.p
@@ -89,7 +89,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         className="text-xl md:text-2xl text-gray-400 mb-2"
                     >
-                        ZHÍXÍNG BÁIHǓ
+                        ZHÃXÃNG BÃIHÇ“
                     </motion.p>
 
                     <motion.p
@@ -98,7 +98,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-lg text-gray-500 mb-8"
                     >
-                        O Tigre que Executa
+                        The Tiger That Executes
                     </motion.p>
 
                     <motion.div
@@ -108,10 +108,10 @@ export default function Home() {
                         className="flex flex-col items-center gap-4 mb-12"
                     >
                         <p className="font-chinese text-2xl text-white">
-                            观察。等待。执行。
+                            è§‚å¯Ÿã€‚ç­‰å¾…ã€‚æ‰§è¡Œã€‚
                         </p>
                         <p className="text-gray-400">
-                            Observar. Esperar. Executar.
+                            Observe. Wait. Execute.
                         </p>
                     </motion.div>
 
@@ -121,8 +121,8 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.6 }}
                         className="inline-block px-6 py-3 bg-gold/20 rounded-full border border-gold/30"
                     >
-                        <span className="text-gold font-chinese">模拟模式</span>
-                        <span className="text-gray-400 ml-2">| Modo Simulação</span>
+                        <span className="text-gold font-chinese">æ¨¡æ‹Ÿæ¨¡å¼</span>
+                        <span className="text-gray-400 ml-2">| Modo SimulaÃ§Ã£o</span>
                     </motion.div>
 
                     {/* Scroll indicator */}
@@ -146,15 +146,15 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto">
                     <FadeIn>
                         <div className="text-center mb-12">
-                            <h2 className="font-chinese text-3xl font-bold text-gold mb-2">实时数据</h2>
-                            <p className="text-gray-400">Dashboard em Tempo Real</p>
+                            <h2 className="font-chinese text-3xl font-bold text-gold mb-2">å®žæ—¶æ•°æ®</h2>
+                            <p className="text-gray-400">Real-Time Dashboard</p>
                         </div>
                     </FadeIn>
 
                     {loading ? (
                         <div className="text-center py-20">
-                            <div className="text-4xl animate-breathe mb-4">🐯</div>
-                            <p className="text-gray-400 font-chinese">加载中...</p>
+                            <div className="text-4xl animate-breathe mb-4">ðŸ¯</div>
+                            <p className="text-gray-400 font-chinese">åŠ è½½ä¸­...</p>
                         </div>
                     ) : (
                         <>
@@ -175,32 +175,32 @@ export default function Home() {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                                 <StatsCard
                                     title="Balance"
-                                    titleCn="模拟余额"
+                                    titleCn="æ¨¡æ‹Ÿä½™é¢"
                                     value={`${(status?.simulated_balance || 10).toFixed(4)} BNB`}
-                                    icon="💰"
+                                    icon="ðŸ’°"
                                     delay={0.1}
                                 />
                                 <StatsCard
                                     title="Total PnL"
-                                    titleCn="总盈亏"
+                                    titleCn="æ€»ç›ˆäº"
                                     value={`${(status?.total_pnl || 0) >= 0 ? '+' : ''}${(status?.total_pnl || 0).toFixed(4)} BNB`}
-                                    icon="📊"
+                                    icon="ðŸ“Š"
                                     trend={(status?.total_pnl || 0) >= 0 ? 'up' : 'down'}
                                     delay={0.2}
                                 />
                                 <StatsCard
                                     title="Win Rate"
-                                    titleCn="胜率"
+                                    titleCn="èƒœçŽ‡"
                                     value={`${(status?.win_rate || 0).toFixed(1)}%`}
-                                    icon="🎯"
+                                    icon="ðŸŽ¯"
                                     delay={0.3}
                                 />
                                 <StatsCard
                                     title="Trades"
-                                    titleCn="交易次数"
+                                    titleCn="äº¤æ˜“æ¬¡æ•°"
                                     value={status?.total_trades || 0}
                                     subtitle={`${status?.wins || 0}W / ${status?.losses || 0}L`}
-                                    icon="📈"
+                                    icon="ðŸ“ˆ"
                                     delay={0.4}
                                 />
                             </div>
@@ -219,30 +219,30 @@ export default function Home() {
                 <div className="max-w-4xl mx-auto">
                     <FadeIn>
                         <div className="text-center mb-12">
-                            <h2 className="font-chinese text-3xl font-bold text-gold mb-2">白虎传说</h2>
-                            <p className="text-gray-400">A Lenda do Tigre Branco</p>
+                            <h2 className="font-chinese text-3xl font-bold text-gold mb-2">ç™½è™Žä¼ è¯´</h2>
+                            <p className="text-gray-400">The Legend of the White Tiger</p>
                         </div>
                     </FadeIn>
 
                     <FadeIn delay={0.2}>
                         <div className="glass rounded-2xl p-8">
                             <p className="font-chinese text-lg text-gray-300 leading-relaxed mb-6">
-                                在西方圣山，太阳每天消逝的地方，住着天界守护者白虎。
+                                åœ¨è¥¿æ–¹åœ£å±±ï¼Œå¤ªé˜³æ¯å¤©æ¶ˆé€çš„åœ°æ–¹ï¼Œä½ç€å¤©ç•Œå®ˆæŠ¤è€…ç™½è™Žã€‚
                             </p>
                             <p className="text-gray-400 mb-6">
-                                Nas montanhas sagradas do Oeste, onde o sol morre todo dia, vivia o Guardião Celestial - o Tigre Branco.
+                                Nas montanhas sagradas do Oeste, onde o sol morre todo dia, vivia o GuardiÃ£o Celestial - o Tigre Branco.
                             </p>
                             <p className="font-chinese text-lg text-gray-300 leading-relaxed mb-6">
-                                三千年来，他观察帝国兴衰，财富聚散，宇宙的规律。
+                                ä¸‰åƒå¹´æ¥ï¼Œä»–è§‚å¯Ÿå¸å›½å…´è¡°ï¼Œè´¢å¯Œèšæ•£ï¼Œå®‡å®™çš„è§„å¾‹ã€‚
                             </p>
                             <p className="text-gray-400 mb-6">
-                                Por 3000 anos ele observou impérios nascerem e caírem, fortunas serem feitas e perdidas, os padrões do universo.
+                                Por 3000 anos ele observou impÃ©rios nascerem e caÃ­rem, fortunas serem feitas e perdidas, os padrÃµes do universo.
                             </p>
                             <p className="font-chinese text-lg text-gold leading-relaxed">
-                                "我不猎杀。我执行。"
+                                "æˆ‘ä¸çŒŽæ€ã€‚æˆ‘æ‰§è¡Œã€‚"
                             </p>
                             <p className="text-gray-400">
-                                "Eu não caço. Eu EXECUTO."
+                                "Eu nÃ£o caÃ§o. Eu EXECUTO."
                             </p>
                         </div>
                     </FadeIn>
@@ -254,17 +254,17 @@ export default function Home() {
                 <div className="max-w-6xl mx-auto">
                     <FadeIn>
                         <div className="text-center mb-12">
-                            <h2 className="font-chinese text-3xl font-bold text-gold mb-2">运作方式</h2>
-                            <p className="text-gray-400">Como Funciona</p>
+                            <h2 className="font-chinese text-3xl font-bold text-gold mb-2">è¿ä½œæ–¹å¼</h2>
+                            <p className="text-gray-400">How It Works</p>
                         </div>
                     </FadeIn>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { icon: '👁️', titleCn: '观察', title: 'Observar', desc: '扫描BSC新代币' },
-                            { icon: '🧠', titleCn: '分析', title: 'Analisar', desc: 'AI评估每个代币' },
-                            { icon: '⚡', titleCn: '执行', title: 'Executar', desc: '自动模拟交易' },
-                            { icon: '📊', titleCn: '记录', title: 'Registrar', desc: '透明展示结果' },
+                            { icon: 'ðŸ‘ï¸', titleCn: 'è§‚å¯Ÿ', title: 'Observe', desc: 'æ‰«æBSCæ–°ä»£å¸' },
+                            { icon: 'ðŸ§ ', titleCn: 'åˆ†æž', title: 'Analyze', desc: 'AIè¯„ä¼°æ¯ä¸ªä»£å¸' },
+                            { icon: 'âš¡', titleCn: 'æ‰§è¡Œ', title: 'Execute', desc: 'è‡ªåŠ¨æ¨¡æ‹Ÿäº¤æ˜“' },
+                            { icon: 'ðŸ“Š', titleCn: 'è®°å½•', title: 'Record', desc: 'é€æ˜Žå±•ç¤ºç»“æžœ' },
                         ].map((step, index) => (
                             <ScaleIn key={index} delay={index * 0.1}>
                                 <div className="glass rounded-2xl p-6 text-center card-hover">
@@ -284,21 +284,21 @@ export default function Home() {
                 <ScaleIn>
                     <div className="max-w-2xl mx-auto text-center glass rounded-3xl p-12 glow-gold">
                         <h2 className="font-chinese text-3xl font-bold text-gold mb-4">
-                            模拟模式
+                            æ¨¡æ‹Ÿæ¨¡å¼
                         </h2>
                         <p className="text-gray-300 mb-6 font-chinese">
-                            白虎正在训练。所有交易都是模拟的。
+                            ç™½è™Žæ­£åœ¨è®­ç»ƒã€‚æ‰€æœ‰äº¤æ˜“éƒ½æ˜¯æ¨¡æ‹Ÿçš„ã€‚
                         </p>
                         <p className="text-gray-400 mb-8">
-                            O Tigre está treinando. Todos os trades são simulados.
+                            O Tigre estÃ¡ treinando. Todos os trades sÃ£o simulados.
                         </p>
                         <div className="inline-block px-8 py-4 bg-gold/20 rounded-xl border border-gold/30">
                             <span className="text-gold font-chinese text-lg">
-                                "一千次虚拟猎杀造就完美真实猎杀"
+                                "ä¸€åƒæ¬¡è™šæ‹ŸçŒŽæ€é€ å°±å®Œç¾ŽçœŸå®žçŒŽæ€"
                             </span>
                         </div>
                         <p className="text-gray-500 text-sm mt-4">
-                            "Mil caças virtuais fazem uma caça real perfeita"
+                            "Mil caÃ§as virtuais fazem uma caÃ§a real perfeita"
                         </p>
                     </div>
                 </ScaleIn>
@@ -306,3 +306,4 @@ export default function Home() {
         </div>
     );
 }
+
